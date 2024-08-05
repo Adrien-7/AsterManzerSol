@@ -11,8 +11,9 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-
+    <script src="https://kit.fontawesome.com/f93cb37f13.js" crossorigin="anonymous"></script>
     <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="Content/Site.css" rel="stylesheet" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -46,20 +47,17 @@
                 </button>
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/signup">Signup</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/login">login</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="container body-content">
+        <div>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
+            
         </div>
     </form>
     <asp:PlaceHolder runat="server">

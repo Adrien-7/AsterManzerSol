@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="AsterManzer.login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
-    <div class="container d-flex justify-content-center align-items-center">
+     <div class="container m-5 d-flex justify-content-center align-items-center flex-column">
+    
         <div class="card card-body w-50">
             <div class="d-flex justify-content-center align-items-center flex-column m-2 p-2">
                 <h2> Login</h2>
